@@ -1,0 +1,40 @@
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Filter options styling */
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Filter options label styling */
+.filter-options label {
+    font-size: 1rem;
+}
+
+/* Filter options select styling */
+.filter-options .form-select {
+    width: 200px;
+    margin-top: 0.5rem;
+}
+
+/* Text input styling */
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+/* Text decoration styling */
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-decoration-none:hover {
+    text-decoration: none;
+}

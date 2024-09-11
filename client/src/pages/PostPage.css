@@ -1,0 +1,81 @@
+/* PostPage.css */
+
+.PostPage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .PostPage h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .PostPage p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .PostPage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .PostPage form {
+    margin-bottom: 20px;
+  }
+  
+  .PostPage input[type="text"],
+  .PostPage textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .PostPage textarea {
+    height: 100px;
+  }
+  
+  .PostPage button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .PostPage button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .PostPage .comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .PostPage .comment p {
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .PostPage .comment .deleteButton {
+    background-color: #dc3545;
+  }
+  

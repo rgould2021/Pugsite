@@ -1,0 +1,106 @@
+/* Card Component */
+.Card {
+    background-color: #ffffff; /* Clean white background */
+    border: 1px solid #ddd; /* Light gray border for a subtle look */
+    border-radius: 0.5rem; /* Rounded corners for modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    margin-bottom: 1.5rem; /* Space between cards */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition on hover */
+    height: auto; /* Adjust height for responsiveness */
+    max-width: 100%; /* Ensure cards don't exceed container width */
+    width: 100%; /* Full width of the container */
+}
+
+/* Hover effect for the card */
+.Card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card image styling */
+.Card img.image {
+    width: 100%;
+    height: auto; /* Adjust height for responsiveness */
+    object-fit: cover; /* Cover the area without distortion */
+    border-bottom: 1px solid #ddd; /* Separator between image and content */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover effect for image */
+.Card img.image:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Card content area */
+.Card .content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title styling */
+.Card .title {
+    font-size: 1.25rem; /* Slightly larger title */
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for title */
+.Card:hover .title {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Metadata styling */
+.Card .author,
+.Card .timestamp {
+    font-size: 0.875rem; /* Smaller font for metadata */
+    color: #888; /* Lighter gray for less emphasis */
+    margin-bottom: 0.5rem; /* Space between metadata items */
+}
+
+/* Description styling */
+.Card .description {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for description */
+    margin-bottom: 1rem; /* Space before the button */
+    flex-grow: 1; /* Allows the description to expand */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+/* Button styling */
+.Card .betButton {
+    display: block;
+    width: fit-content; /* Fit the button to its content */
+    margin: 0 auto; /* Center the button */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transition */
+}
+
+/* Hover effect for button */
+.Card .betButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Card {
+        width: 100%; /* Full width of the container */
+    }
+
+    .Card img.image {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+}
